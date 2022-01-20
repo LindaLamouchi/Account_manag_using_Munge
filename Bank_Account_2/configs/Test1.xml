@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<configuration>
+	<feature automatic="selected" name="BankAccount"/>
+	<feature automatic="selected" name="Type"/>
+	<feature manual="selected" name="Epargne"/>
+	<feature automatic="unselected" name="Courant"/>
+	<feature automatic="selected" manual="selected" name="Interest"/>
+	<feature manual="selected" name="InterestEstimation"/>
+	<feature automatic="selected" name="Retrait"/>
+	<feature manual="selected" name="Lock"/>
+	<feature name="Transaction"/>
+</configuration>

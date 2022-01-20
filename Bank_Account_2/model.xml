@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<featureModel>
+	<properties>
+		<calculations key="tautology" value="true"/>
+		<calculations key="auto" value="true"/>
+		<graphics key="autolayoutconstraints" value="false"/>
+		<graphics key="legendautolayout" value="true"/>
+		<calculations key="redundant" value="true"/>
+		<graphics key="showshortnames" value="false"/>
+		<graphics key="layout" value="horizontal"/>
+		<graphics key="showcollapsedconstraints" value="true"/>
+		<graphics key="legendhidden" value="false"/>
+		<calculations key="constraints" value="true"/>
+		<graphics key="layoutalgorithm" value="1"/>
+		<calculations key="features" value="true"/>
+	</properties>
+	<struct>
+		<and mandatory="true" name="BankAccount">
+			<graphics key="collapsed" value="false"/>
+			<alt mandatory="true" name="Type">
+				<feature name="Epargne"/>
+				<feature name="Courant"/>
+			</alt>
+			<and name="Interest">
+				<graphics key="collapsed" value="false"/>
+				<feature name="InterestEstimation"/>
+			</and>
+			<feature mandatory="true" name="Retrait"/>
+			<and name="Lock">
+				<graphics key="collapsed" value="false"/>
+				<feature name="Transaction"/>
+			</and>
+		</and>
+	</struct>
+</featureModel>
